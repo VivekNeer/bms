@@ -9,26 +9,24 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-// Define types for clarity
-interface MovieData {
+// Define a generic type for both Movies and Stand-up Shows
+type ItemData = {
   name: string;
   image: string;
-  genre: string;
-}
+  genre?: string; // Optional for stand-up shows
+  venue?: string; // Optional for movies
+};
 
 interface CarouselLibraryProps {
   title: string;
-  items: MovieData[];
-  className?: string;
+  items: ItemData[];
 }
 
-export default function CarouselLibrary({ title, items, className }: CarouselLibraryProps) {
+export default function CarouselLibrary({ title, items }: CarouselLibraryProps) {
   return (
-    <div className={`relative w-full pt-8 pb-8 bg-[#F5F5F5] overflow-hidden ${className}`}>
+    <div className="relative w-full pt-8 pb-8 bg-[#F5F5F5] overflow-hidden">
       <Carousel className="w-full mx-auto max-w-[1240px]">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-          {title}
-        </h2>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6">{title}</h2>
 
         {/* Carousel Content */}
         <CarouselContent className="flex gap-x-4">
@@ -46,16 +44,16 @@ export default function CarouselLibrary({ title, items, className }: CarouselLib
               />
 
               <div className="mt-4 text-center">
-                <h3 className="text-lg font-medium text-gray-900">
-                  {item.name}
-                </h3>
-                <p className="text-sm text-gray-500">{item.genre}</p>
+                <h3 className="text-lg font-medium text-gray-900">{item.name}</h3>
+                <p className="text-sm text-gray-500">
+                  {item.genre ? `Genre: ${item.genre}` : `Venue: ${item.venue}`}
+                </p>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
 
-        {/* Shadcn Inbuilt Controls */}
+        {/* Controls */}
         <CarouselPrevious className="absolute left-[-50px]" />
         <CarouselNext className="absolute right-[-50px]" />
       </Carousel>
