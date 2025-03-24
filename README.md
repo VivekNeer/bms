@@ -1,6 +1,8 @@
 ## 🎟️ BookMyShow Clone
 
-Welcome to the **BookMyShow Clone** — a movie and event booking platform built using **Next.js**, **Tailwind CSS**, and **Shadcn UI**. This project includes movie recommendations, upcoming stand-up shows, and a clean, responsive interface.
+Welcome to the **BookMyShow Clone** — a movie and event booking platform built using **Next.js**, **Tailwind CSS**, and **Shadcn UI**. This project includes movie recommendations, upcoming stand-up shows, and a clean, responsive interface.  
+
+✅ **Clerk Authentication**: Login and signup using Clerk are fully functional. Environment variables are already configured via Vercel for the live demo.
 
 ## 🚀 **Live Demo**
 [Visit the Live Website](https://your-live-website-link.vercel.app)  
@@ -10,6 +12,7 @@ Welcome to the **BookMyShow Clone** — a movie and event booking platform built
 - **Styling:** Tailwind CSS  
 - **Components:** Shadcn UI  
 - **Image Handling:** Next.js Image Component  
+- **Authentication:** Clerk  
 - **Deployment:** Vercel  
 
 ## ⚙️ **Installation**
