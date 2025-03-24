@@ -4,7 +4,7 @@ import {
   FooterColumn,
   FooterBottom,
   FooterContent,
-} from "../../ui/footer";
+} from "../../Footer";
 import LaunchUI from "../../logos/launch-ui";
 import { ReactNode } from "react";
 

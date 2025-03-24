@@ -5,7 +5,7 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
-import SearchBar from "@/components/searchbar";
+import SearchBar from "@/components/ui/searchbar";
 import Logo from "@/components/ui/Logo";
 import { Button } from "@/components/ui/button";
 import LocationPopup from "@/components/ui/LocationPopup";
@@ -18,7 +18,7 @@ export default function Header() {
       <header className="flex flex-col bg-white shadow-md">
         <div className="flex items-center justify-center p-2">
           <div className="flex items-center gap-4 w-2/3">
-            <Logo className="w-36 h-12" />
+            <Logo />
             
             <div className="flex-grow max-w-md">
               <SearchBar />

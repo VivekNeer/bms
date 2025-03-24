@@ -1,7 +1,7 @@
 import Banner from "@/components/Banner";
 import CarouselComponent from "@/components/CarouselComponent";
-import CarouselLibrary from "@/components/CarouselLibrary";
-import { Footer } from "@/components/ui/footer";
+import MoviesPage from "@/components/MovieCarousel";
+import StandupPage from "@/components/StandupCarousel";
 
 export default function Home() {
   return (
@@ -9,8 +9,9 @@ export default function Home() {
       <CarouselComponent />
       <div className="bg-[#F5F5F5] mb-6">
         <div className="mb-0">
-          <CarouselLibrary/>
+          <MoviesPage/>
           <Banner />
+          <StandupPage/>
         </div>
       </div >
     </main>

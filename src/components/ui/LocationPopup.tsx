@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import SearchBar from "@/components/searchbar";
+import SearchBar from "@/components/ui/searchbar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
